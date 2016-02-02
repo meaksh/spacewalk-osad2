@@ -39,7 +39,7 @@ class ClientConfig(object):
             try:
                 ret = serverrpc.registration.register_osad(self.get_systemid(), {'client-timestamp': int(time.time())})
             except Exception as e:
-                self.ogger.error(e)
+                self.logger.error(e)
                 self.logger.info("waiting %d seconds..." % self.get_osad_registry_interval())
                 time.sleep(self.get_osad_registry_interval())
         return ret
