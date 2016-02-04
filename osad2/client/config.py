@@ -21,7 +21,6 @@ import os
 
 from rhn import rpclib
 from up2date_client.config import initUp2dateConfig
-from up2date_client import config
 
 
 class ClientConfig(object):

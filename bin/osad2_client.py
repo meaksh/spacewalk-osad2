@@ -11,11 +11,11 @@
 #
 import argparse
 
-from src.client.config import ClientConfig
-from src.client.client import Client
-from src.daemonize import daemonize
+from osad2.client.config import ClientConfig
+from osad2.client.client import Client
+from osad2.daemonize import daemonize
 
-DEFAULT_CONFIG_FILE = '/etc/sysconfig/rhn/osad.conf'
+DEFAULT_CONFIG_FILE = '/etc/rhn/osad2-client/osad_client.prod.cfg'
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
